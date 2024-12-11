@@ -1,0 +1,96 @@
+/* Estilo personalizado para o sistema de academia */
+
+body {
+    background: url('https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148806276.jpg?semt=ais_hybrid');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Ajuste a opacidade (0.5 = 50% transparente) */
+    z-index: -1;
+}
+
+h1 {
+    color:#ced4da;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #495057;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color:black;
+    border-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: black;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+}
+
+table th {
+    background-color: #343a40;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+table tr:hover {
+    background-color: #e9ecef;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
